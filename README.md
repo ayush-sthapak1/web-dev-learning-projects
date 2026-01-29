@@ -9,8 +9,6 @@ fundamentals by building projects from scratch using HTML, CSS, and JavaScript.
 
 ---
 
-## 📂 Projects
-
 ### 1. Spotify Clone (HTML & CSS)
 A static clone of Spotify Web Player built to practice layout, positioning,
 and responsive UI using only HTML and CSS.
