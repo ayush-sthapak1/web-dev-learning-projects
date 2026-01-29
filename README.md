@@ -1,28 +1,47 @@
 # Web Development Learning Projects
 
-This repository contains small to medium projects I built while learning web development.
-The goal of this repo is to document my learning journey and practice core concepts by
-building things from scratch instead of following copy-paste tutorials.
+This repository contains small projects I built while learning web development.
+Each project focuses on practicing specific concepts instead of being fully
+production-ready applications.
 
-Each project focuses on specific fundamentals like DOM manipulation, JavaScript logic,
-state management, APIs, and persistence.
+The purpose of this repository is to track my learning progress and strengthen
+fundamentals by building projects from scratch using HTML, CSS, and JavaScript.
 
+---
 
 ## 📂 Projects
 
-### 1. Todo App (Vanilla JavaScript)
-A fully functional todo application built using plain HTML, CSS, and JavaScript.
+### 1. Spotify Clone (HTML & CSS)
+A static clone of Spotify Web Player built to practice layout, positioning,
+and responsive UI using only HTML and CSS.
 
+📁 `spotify-clone/`
 
+---
 
-## 🎯 Purpose of this Repository
-- Strengthen fundamentals
-- Build problem-solving skills
-- Track learning progress over time
-- Prepare for frameworks like React and backend development
+### 2. Simon Says Game (HTML, CSS, JavaScript)
+A browser-based Simon Says game focused on JavaScript logic, event handling,
+and game state management.
 
+📁 `simon-says-game/`
 
-## 📌 Notes
-- These projects are learning-focused, not production-ready.
-- Code is intentionally kept simple and readable.
-- Each project has its own README explaining what was learned.
+---
+
+### 3. Todo App (Vanilla JavaScript)
+A fully functional todo application with persistent state using localStorage.
+
+📁 `todo-app/`
+
+---
+
+## 🛠️ Tech Stack
+- HTML
+- CSS
+- JavaScript (Vanilla)
+
+---
+
+## 🎯 Purpose
+- Practice core web development fundamentals
+- Build problem-solving skills through projects
+- Prepare for learning frameworks like React and backend development
