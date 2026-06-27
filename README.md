@@ -39,10 +39,17 @@ A modern version of the Todo application built using React and Vite, styled with
 
 ---
 
+### 5. Course Dashboard (React + Vite)
+A multi-page React application simulating a student course management system, built using React Router. It includes dynamic routing for course detail pages and nested routing for dashboard sub-pages (Profile, Settings, and Grades).
+
+📁 `CourseDashboard/`
+
+---
+
 ## 🛠️ Tech Stack
 - HTML & CSS
 - JavaScript (Vanilla)
-- React.js
+- React.js & React Router
 - Vite
 
 ---
