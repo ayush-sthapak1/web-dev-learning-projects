@@ -33,7 +33,13 @@ A fully functional todo application with persistent state using localStorage.
 ---
 
 ### 4. React Todo App (React + Vite)
-A modern version of the Todo application built using React and Vite, styled with a sleek glassmorphic design. Features task validation (preventing duplicates and empty tasks) and persistent local storage.
+A component-based React Todo application built using Vite, styled with a clean, basic design.
+- **Key Features**:
+  - **Modular Architecture**: Component breakdown into `Navbar`, `TaskForm`, `TaskList`, and `TaskItem`.
+  - **Inline Editing**: Allows users to dynamically modify task text inline with Save/Cancel actions.
+  - **Persistent State**: Automatically syncs the todo list with browser `localStorage`.
+  - **Task Operations**: Supports adding, toggling completion status, inline editing, and deleting tasks.
+- **Tech Stack**: React (utilizing `useState` and `useEffect` hooks), Vite, Vanilla CSS.
 
 📁 `ReactTodo/`
 

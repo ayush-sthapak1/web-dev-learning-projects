@@ -7,6 +7,8 @@ A component-based, interactive Todo application built with **React** and **Vite*
 - **Inline Task Editing**: Click the Edit button to modify the text of a task in-place and save/cancel changes.
 - **Task Persistence**: Automatically saves and loads your tasks using browser `localStorage` (key: `local_todo_tasks`).
 - **Complete Task Actions**: Add, Edit, Delete, and Toggle task completion status.
+- **Clean Basic Styling**: A lightweight, clean, and responsive design with styled inputs, buttons, checklist alignments, and completion state visuals.
+
 
 ## 📁 Project Structure
 - `src/Components/Navbar.jsx` - Header component.
