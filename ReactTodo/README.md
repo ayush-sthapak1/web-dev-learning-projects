@@ -1,33 +1,16 @@
-# React Todo App 📝
+# React + Vite
 
-A clean, modern, and beautiful Todo application built with **React** and **Vite**. The project is styled using a modern glassmorphic theme and includes essential task-management features.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## ✨ Features
-- **Modern Glassmorphic UI**: Beautiful gradients, shadows, and smooth hover animations.
-- **Task Validation**: Prevents adding empty tasks or duplicate tasks (case-insensitive).
-- **Persistent State**: Automatically saves and loads your todos using browser `localStorage` (tasks persist on page refresh).
-- **Fully Responsive**: Optimized layout for both desktop and mobile devices.
+Currently, two official plugins are available:
 
-## 🛠️ Tech Stack
-- **React.js** (Functional components & hooks)
-- **Vite** (Next-generation frontend tooling)
-- **CSS3** (Custom glassmorphic styles and animations)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## 🚀 Getting Started
+## React Compiler
 
-To run the application locally:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### 1. Install Dependencies
-Navigate to the `ReactTodo` directory and install the required npm packages:
-```bash
-npm install
-```
+## Expanding the ESLint configuration
 
-### 2. Start the Development Server
-Launch the local dev server using Vite:
-```bash
-npm run dev
-```
-
-### 3. Open in Browser
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the application.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
