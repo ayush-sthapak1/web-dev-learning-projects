@@ -1,16 +1,22 @@
-# React + Vite
+# React Todo App 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A component-based, interactive Todo application built with **React** and **Vite**.
 
-Currently, two official plugins are available:
+## ✨ Features
+- **Component-Based Architecture**: Modular design separating concern into `Navbar`, `TaskForm`, `TaskList`, and `TaskItem`.
+- **Inline Task Editing**: Click the Edit button to modify the text of a task in-place and save/cancel changes.
+- **Task Persistence**: Automatically saves and loads your tasks using browser `localStorage` (key: `local_todo_tasks`).
+- **Complete Task Actions**: Add, Edit, Delete, and Toggle task completion status.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📁 Project Structure
+- `src/Components/Navbar.jsx` - Header component.
+- `src/Components/TaskForm.jsx` - Component to enter and add new tasks.
+- `src/Components/TaskList.jsx` - Component to iterate and render the list of tasks.
+- `src/Components/TaskItem.jsx` - Individual task item managing edit state and toggle/delete handlers.
+- `src/App.jsx` - Primary state manager handling CRUD actions and local storage sync.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **React.js** (Functional components, hooks like `useState`, `useEffect`)
+- **Vite** (Next-generation frontend tooling)
+- **CSS3** (Styling for task status state transitions)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
