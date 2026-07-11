@@ -1,6 +1,6 @@
 # Notes API
 
-A simple RESTful API built with **Express.js** to manage notes in memory.
+A simple and modular RESTful API built with **Express.js** to manage notes in memory, organized using a router-controller architecture.
 
 ## Features
 - **Create Note** (`POST /notes`): Create a new note with a title and content.
@@ -8,6 +8,19 @@ A simple RESTful API built with **Express.js** to manage notes in memory.
 - **Update Note** (`PUT /notes/:id`): Edit an existing note's title and content.
 - **Delete Note** (`DELETE /notes/:id`): Remove a note from the list.
 - **In-Memory Storage**: Uses a simple JavaScript array to store notes during runtime.
+- **Modular Structure**: Code is split into entrypoint, routes, and controllers for clean separation of concerns.
+
+## Project Structure
+```text
+NotesApi/
+├── index.js                  # App entry point, starts the Express server
+├── routes/
+│   └── notes.js              # Express Router mapping HTTP verbs/paths to controllers
+├── controllers/
+│   └── notesController.js    # Business logic & array manipulation handlers
+├── package.json
+└── README.md
+```
 
 ## API Endpoints
 

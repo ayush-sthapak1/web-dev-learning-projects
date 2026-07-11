@@ -60,7 +60,7 @@ A multi-page React application simulating a student course management system, bu
 ---
 
 ### 7. Notes API (Node.js & Express.js)
-A simple RESTful API built using Node.js and Express to manage notes in memory with full CRUD capabilities.
+A modular RESTful API built using Node.js and Express to manage notes in memory, structured using a router-controller architecture with full CRUD capabilities.
 
 📁 `NotesApi/`
 
