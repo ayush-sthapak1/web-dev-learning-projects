@@ -59,10 +59,18 @@ A multi-page React application simulating a student course management system, bu
 
 ---
 
+### 7. Notes API (Node.js & Express.js)
+A simple RESTful API built using Node.js and Express to manage notes in memory with full CRUD capabilities.
+
+📁 `NotesApi/`
+
+---
+
 ## 🛠️ Tech Stack
 - HTML & CSS
 - JavaScript (Vanilla)
 - React.js & React Router
+- Node.js & Express.js
 - Vite
 
 ---
