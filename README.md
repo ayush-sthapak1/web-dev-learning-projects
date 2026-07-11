@@ -32,7 +32,14 @@ A fully functional todo application with persistent state using localStorage.
 
 ---
 
-### 4. React Todo App (React + Vite)
+### 4. Weather App (Vanilla JavaScript)
+A simple weather application that fetches current temperature and humidity using the Open‑Meteo API. Users can enter a city name and see real‑time weather data.
+
+📁 `Weather/`
+
+---
+
+### 5. React Todo App (React + Vite)
 A component-based React Todo application built using Vite, styled with a clean, basic design.
 - **Key Features**:
   - **Modular Architecture**: Component breakdown into `Navbar`, `TaskForm`, `TaskList`, and `TaskItem`.
@@ -45,7 +52,7 @@ A component-based React Todo application built using Vite, styled with a clean, 
 
 ---
 
-### 5. Course Dashboard (React + Vite)
+### 6. Course Dashboard (React + Vite)
 A multi-page React application simulating a student course management system, built using React Router. It includes dynamic routing for course detail pages and nested routing for dashboard sub-pages (Profile, Settings, and Grades).
 
 📁 `CourseDashboard/`
