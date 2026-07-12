@@ -59,8 +59,8 @@ A multi-page React application simulating a student course management system, bu
 
 ---
 
-### 7. Notes API (Node.js & Express.js)
-A modular RESTful API built using Node.js and Express to manage notes in memory, structured using a router-controller architecture with full CRUD capabilities.
+### 7. Notes API (Node.js, Express.js & MongoDB)
+A modular RESTful API built using Node.js, Express, and MongoDB (Mongoose) to manage notes, structured using a router-controller-model architecture with full CRUD capabilities and database persistence.
 
 📁 `NotesApi/`
 
@@ -71,6 +71,7 @@ A modular RESTful API built using Node.js and Express to manage notes in memory,
 - JavaScript (Vanilla)
 - React.js & React Router
 - Node.js & Express.js
+- MongoDB & Mongoose
 - Vite
 
 ---

@@ -1,77 +1,98 @@
-const notes = [
-    {
-        id: 1,
-        title: "Learn Express",
-        content: "Middleware"
+const Note = require("../models/Note");
+
+async function createNote(req, res) {
+    
+    try {
+        const {title,content} = req.body;
+
+        const note = await Note.create({
+            title,
+            content
+        });
+
+        res.status(201).json(note);
+    } catch(err){
+        res.status(400).json({message:err.message});
     }
-];
-
-function createNote(req, res) {
-    const { title, content } = req.body;
-
-    if (!title || !content) {
-        return res.status(400).send("Title and content are required.");
-    }
-
-    const note = {
-        id: Date.now(),
-        title,
-        content
-    };
-
-    notes.push(note);
-
-    res.status(201).send(note);
 }
 
-function getNoteById(req, res) {
-    const noteID = Number(req.params.id);
+async function getAllNotes(req, res) {
+    try {
+        const notes = await Note.find();
 
-    const note = notes.find(note => note.id === noteID);
-
-    if (!note) {
-        return res.status(404).send("Note not found");
+        res.json(notes);
+    } catch (err) {
+        res.status(500).json({
+            message: err.message
+        });
     }
-
-    res.send(note);
 }
 
-function updateNote(req, res) {
-    const noteID = Number(req.params.id);
+async function getNoteById(req, res) {
+    try {
+        const note = await Note.findById(req.params.id);
 
-    const note = notes.find(note => note.id === noteID);
+        if (!note) {
+            return res.status(404).json({
+                message: "Note not found"
+            });
+        }
 
-    if (!note) {
-        return res.status(404).send("Note not found");
+        res.json(note);
+    } catch (err) {
+        res.status(500).json({
+            message: err.message
+        });
     }
-
-    const { title, content } = req.body;
-
-    if (!title || !content) {
-        return res.status(400).send("Title and content are required.");
-    }
-
-    note.title = title;
-    note.content = content;
-
-    res.status(200).send(note);
 }
 
-function deleteNote(req, res) {
-    const noteID = Number(req.params.id);
+async function updateNote(req, res) {
+    try {
+        const note = await Note.findByIdAndUpdate(
+            req.params.id,
+            req.body,
+            { new: true }
+        );
 
-    const index = notes.findIndex(note => note.id === noteID);
+        if (!note) {
+            return res.status(404).json({
+                message: "Note not found"
+            });
+        }
 
-    if (index === -1) {
-        return res.status(404).send("Note not found");
+        res.json(note);
+
+    } catch (err) {
+        res.status(500).json({
+            message: err.message
+        });
     }
+}
 
-    notes.splice(index, 1);
+async function deleteNote(req, res) {
+    try {
 
-    res.status(200).send("Deleted Successfully");
+        const note = await Note.findByIdAndDelete(req.params.id);
+
+        if (!note) {
+            return res.status(404).json({
+                message: "Note not found"
+            });
+        }
+
+        res.json({
+            message: "Deleted Successfully"
+        });
+
+    } catch (err) {
+        res.status(500).json({
+            message: err.message
+        });
+    }
 }
 
 module.exports = {
+    getAllNotes,
     createNote,
     getNoteById,
     updateNote,
