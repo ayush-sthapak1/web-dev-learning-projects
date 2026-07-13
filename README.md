@@ -66,12 +66,20 @@ A modular RESTful API built using Node.js, Express, and MongoDB (Mongoose) to ma
 
 ---
 
+### 8. Authentication API (Node.js, Express.js, MongoDB & JWT)
+A modular, secure RESTful API built using Node.js, Express, MongoDB (Mongoose), and JSON Web Tokens (JWT) for user registration, token-based authentication, and resource protection.
+
+📁 `AuthAPI/`
+
+---
+
 ## 🛠️ Tech Stack
 - HTML & CSS
 - JavaScript (Vanilla)
 - React.js & React Router
 - Node.js & Express.js
 - MongoDB & Mongoose
+- JSON Web Tokens (JWT)
 - Vite
 
 ---
